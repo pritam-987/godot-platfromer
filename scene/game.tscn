@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cb4dr60j2gj1d" path="res://scene/platform.tscn" id="3_33cqm"]
 [ext_resource type="PackedScene" uid="uid://dtkeiebeowxdh" path="res://scene/coin.tscn" id="4_xwcet"]
 [ext_resource type="PackedScene" uid="uid://dqgvg7ek30774" path="res://killzone.tscn" id="5_p1ry8"]
+[ext_resource type="PackedScene" uid="uid://2oqfqxx5b61g" path="res://enemy.tscn" id="6_xlg7c"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dbls1"]
 
@@ -234,7 +235,7 @@ limit_smoothed = true
 [node name="TileMap" type="TileMap" parent="." unique_id=2027922791]
 tile_set = SubResource("TileSet_6ocqj")
 format = 2
-layer_0/tile_data = PackedInt32Array(65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 589825, 65536, 1, 589826, 131072, 1, 589827, 262144, 1, 589828, 262144, 1, 589829, 196608, 0, 589830, 196608, 1, 589831, 196608, 0, 589832, 0, 0, 589833, 327680, 0, 589834, 131072, 0, 589835, 262144, 1, 393224, 0, 0, 393225, 0, 1, 393226, 0, 1, 393227, 0, 1, 393228, 0, 1, 327689, 0, 0, 327690, 0, 0, 327691, 0, 1, 327692, 0, 1, 262155, 0, 0, 262156, 0, 0, 327693, 0, 1, 262157, 0, 0, 393229, 0, 1, 589836, 589824, 0, 589837, 655360, 0, 589838, 720896, 0, 655358, 589824, 0, 655359, 655360, 0, 589824, 720896, 0)
+layer_0/tile_data = PackedInt32Array(65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 589825, 65536, 1, 589826, 131072, 1, 589827, 262144, 1, 589828, 262144, 1, 589829, 196608, 0, 589830, 196608, 1, 589831, 196608, 0, 589832, 0, 0, 589833, 327680, 0, 589834, 131072, 0, 589835, 262144, 1, 393224, 0, 0, 393225, 0, 1, 393226, 0, 1, 393227, 65536, 1, 393228, 0, 1, 327689, 0, 0, 327690, 0, 0, 327691, 0, 1, 327692, 0, 1, 262155, 0, 0, 262156, 0, 0, 327693, 65536, 1, 262157, 0, 0, 393229, 65536, 1, 589836, 589824, 0, 589837, 655360, 0, 589838, 720896, 0, 655358, 589824, 0, 655359, 655360, 0, 589824, 720896, 0, 262162, 0, 0, 327698, 0, 1, 393234, 0, 1, 327699, 65536, 1, 393235, 0, 1, 393230, 0, 1, 393231, 0, 1, 393232, 0, 1, 393233, 0, 1, 327697, 65536, 1, 327696, 0, 1, 327695, 65536, 1, 327694, 0, 1, 327700, 0, 1, 393236, 0, 1, 393237, 0, 1, 327701, 0, 1, 393238, 0, 1, 262163, 0, 0, 262164, 0, 0, 262165, 0, 0, 327702, 65536, 1)
 
 [node name="platform2" parent="." unique_id=1267353367 instance=ExtResource("3_33cqm")]
 position = Vector2(257, 146)
@@ -258,3 +259,9 @@ position = Vector2(103, 202)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=402264642]
 position = Vector2(1, 0)
 shape = SubResource("WorldBoundaryShape2D_p1ry8")
+
+[node name="enemy" parent="." unique_id=455235284 instance=ExtResource("6_xlg7c")]
+position = Vector2(25, 132)
+
+[node name="enemy3" parent="." unique_id=1850029560 instance=ExtResource("6_xlg7c")]
+position = Vector2(235, 67)
