@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://83slsm1v1ies"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kifm8"]
+load_path = "res://.godot/imported/platforms.png-3869606db457611ed4193d705dc364e4.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ocqj"]
+size = Vector2(16, 8)
+
+[node name="small_platform" type="AnimatableBody2D" unique_id=307184854]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1079849626]
+position = Vector2(3.5, 0)
+scale = Vector2(1.109375, 1)
+texture = SubResource("CompressedTexture2D_kifm8")
+region_enabled = true
+region_rect = Rect2(0, 0, 14.988464, 8.341492)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2082654421]
+position = Vector2(4, 0)
+shape = SubResource("RectangleShape2D_6ocqj")
+one_way_collision = true

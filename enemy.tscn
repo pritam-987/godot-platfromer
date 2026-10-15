@@ -65,3 +65,11 @@ target_position = Vector2(9, 0)
 [node name="RayCastLeft" type="RayCast2D" parent="." unique_id=23178332]
 position = Vector2(1, 6)
 target_position = Vector2(-9, 0)
+
+[node name="RayCastBottom" type="RayCast2D" parent="." unique_id=1389290021]
+position = Vector2(4, 6)
+target_position = Vector2(0, 12)
+
+[node name="RayCastBottom2" type="RayCast2D" parent="." unique_id=698435711]
+position = Vector2(-4, 6)
+target_position = Vector2(0, 12)
