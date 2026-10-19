@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dqgvg7ek30774" path="res://killzone.tscn" id="5_p1ry8"]
 [ext_resource type="PackedScene" uid="uid://83slsm1v1ies" path="res://scene/small_platform.tscn" id="6_ll5lq"]
 [ext_resource type="PackedScene" uid="uid://2oqfqxx5b61g" path="res://enemy.tscn" id="6_xlg7c"]
+[ext_resource type="PackedScene" uid="uid://dn1yl4q3u65n7" path="res://scene/music.tscn" id="9_17rxn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ll5lq"]
 texture = ExtResource("2_dbls1")
@@ -536,3 +537,5 @@ position = Vector2(377, 203)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzones/killzone2" unique_id=1415061715]
 position = Vector2(-9, -35)
 shape = SubResource("WorldBoundaryShape2D_p1ry8")
+
+[node name="Music" parent="." unique_id=1975323059 instance=ExtResource("9_17rxn")]
