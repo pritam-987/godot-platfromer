@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://83slsm1v1ies" path="res://scene/small_platform.tscn" id="6_ll5lq"]
 [ext_resource type="PackedScene" uid="uid://2oqfqxx5b61g" path="res://enemy.tscn" id="6_xlg7c"]
 [ext_resource type="PackedScene" uid="uid://dn1yl4q3u65n7" path="res://scene/music.tscn" id="9_17rxn"]
+[ext_resource type="PackedScene" uid="uid://eyb0gxcyukbw" path="res://scene/flag.tscn" id="10_yq8tf"]
+[ext_resource type="PackedScene" uid="uid://cgqfbcnllo0tu" path="res://Finish_menu.tscn" id="11_ym5sv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ll5lq"]
 texture = ExtResource("2_dbls1")
@@ -539,3 +541,8 @@ position = Vector2(-9, -35)
 shape = SubResource("WorldBoundaryShape2D_p1ry8")
 
 [node name="Music" parent="." unique_id=1975323059 instance=ExtResource("9_17rxn")]
+
+[node name="Flag" parent="." unique_id=1163451076 instance=ExtResource("10_yq8tf")]
+position = Vector2(353, 72)
+
+[node name="CanvasLayer" parent="." unique_id=1443035979 instance=ExtResource("11_ym5sv")]

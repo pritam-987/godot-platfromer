@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://cgqfbcnllo0tu"]
+
+[ext_resource type="Script" uid="uid://ye3fp2p2oigp" path="res://finish_menu.gd" id="1_6p7pg"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1443035979]
+script = ExtResource("1_6p7pg")
+
+[node name="WinMenu" type="Panel" parent="." unique_id=1039544474]
+z_index = 50
+anchors_preset = -1
+anchor_left = 0.36
+anchor_top = 0.321
+anchor_right = 0.36
+anchor_bottom = 0.321
+offset_left = -4.7200317
+offset_top = -3.0080109
+offset_right = -4.7200317
+offset_bottom = 401.992
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 6
+
+[node name="Title" type="Label" parent="WinMenu" unique_id=53621031]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.186
+anchor_right = 0.5
+anchor_bottom = 0.186
+offset_left = -65.0
+offset_top = -22.400005
+offset_right = 62.0
+offset_bottom = 22.599998
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "You Win"
+metadata/_edit_use_anchors_ = true
+
+[node name="RestartButton" type="Button" parent="WinMenu" unique_id=2100123323]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -26.0
+offset_top = -101.0
+offset_right = 35.0
+offset_bottom = -81.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+
+[node name="Label" type="Label" parent="WinMenu/RestartButton" unique_id=987602662]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.27800003
+anchor_top = 0.5
+anchor_right = 0.27800003
+anchor_bottom = 0.5
+offset_left = -12.957996
+offset_top = -12.999988
+offset_right = 39.042007
+offset_bottom = 10.000011
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 16
+text = "Replay"
+
+[node name="QuitButton" type="Button" parent="WinMenu" unique_id=2142637845]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -76.0
+offset_right = 33.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+
+[node name="Label" type="Label" parent="WinMenu/QuitButton" unique_id=2013887862]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
+offset_top = -14.5
+offset_right = 17.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 16
+text = "Quit"
+
+[connection signal="pressed" from="WinMenu/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="WinMenu/QuitButton" to="." method="_on_quit_button_pressed"]
