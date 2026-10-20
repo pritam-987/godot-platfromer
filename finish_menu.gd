@@ -1,5 +1,6 @@
 extends CanvasLayer
 
+@onready var game_manager = $"../GameManager"
 
 func _on_restart_button_pressed() -> void:
 	get_tree().paused = false

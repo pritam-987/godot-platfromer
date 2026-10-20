@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ceg0ekjsqebxv" path="res://flag.gd" id="1_i00u6"]
 [ext_resource type="Texture2D" uid="uid://5i5jl3t02jqf" path="res://assets/sprites/flag.png" id="1_u73q0"]
+[ext_resource type="AudioStream" uid="uid://4dmtbkiktebn" path="res://assets/sounds/explosion.wav" id="3_0loj0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ocqj"]
 size = Vector2(19, 29)
@@ -19,5 +20,9 @@ region_rect = Rect2(2.8118591, 0, 30.996368, 34.56526)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=435830475]
 position = Vector2(0.5, -0.5)
 shape = SubResource("RectangleShape2D_6ocqj")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1497671145]
+stream = ExtResource("3_0loj0")
+bus = &"SFX"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
